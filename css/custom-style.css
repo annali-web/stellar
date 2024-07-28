@@ -1,0 +1,472 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+
+
+/* ----------------------------------- GLOBAL Stylings ----------------------------------- */
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    color: #ffffff;
+    font-size: 6rem;
+    font-weight: 600;
+    line-height: 1.5;
+    margin-bottom: 3.5rem;
+}
+
+p {
+    font-size: 1.7rem;
+    line-height: 2;
+}
+
+a {
+    color: #035D5C;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+a:hover,
+a:focus,
+a:active {
+    color: #F26522;
+    text-decoration: none;
+}
+
+.heading-container {
+    padding-left: 0;    
+    margin-bottom: 10rem;
+}
+.heading-container .number {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #F26522;
+    letter-spacing: 2px;
+}
+.heading-container .number-line {
+    width: 45px;
+    display: inline-block;
+    vertical-align: middle;
+    border-bottom: 1px solid #F26522;
+    margin: 0 1rem;
+}
+.heading-container h2,
+.heading-container .lead-copy {
+    padding-left: 10.5rem;
+}
+.heading-container h2 {
+    font-size: 4.5rem;
+    font-weight: 600;
+    line-height: 1.5;
+    margin-bottom: 3rem;
+}
+.heading-container .lead-copy {
+    font-size: 2.4rem;
+    line-height: 1.875;
+    color: #a3a3a3;
+}
+
+.dark-bg {
+    background-color: #2a2a2a;
+}
+.dark-bg .heading-container h2,
+.dark-bg h3 {
+    color: #ffffff;
+}
+.dark-bg p {
+    color: #a3a3a3;
+}
+.dark-overlay {
+    position: relative;
+}
+.dark-overlay:before {
+    content: "";
+    background-color: rgba(0, 0, 0, .5);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    transition: background-color .5s ease-out;
+    -moz-transition: background-color .5s ease-out;
+    -o-transition: background-color .5s ease-out;
+}
+
+
+.btn {
+    background-color: transparent;
+    color: #ffffff;
+
+    /* background: linear-gradient(#F26522 0 0) var(--p,0)/var(--p,0) no-repeat;
+    transition: .4s,background-position 0s; */
+
+    background-image: linear-gradient(#F26522,#F26522);
+    background-size: 0 100%;
+    background-repeat: no-repeat;
+    transition: .4s;
+
+    text-transform: uppercase;
+    border: 1.6px solid #F26522;
+    border-radius: 0;
+    padding: 2rem 5rem;
+    font-size: 1.5rem;
+    letter-spacing: .5rem;
+    line-height: .7;
+
+    display: flex;
+    align-items: center;
+
+}
+.btn:hover {
+    /* --p: 100%; */
+    background-size: 100% 100%;
+    color: white;
+}
+
+.btn img {
+    margin-left: 1rem;
+    width: 2rem;
+}
+
+.btn:hover img {
+    margin-left: 2rem;
+    transition: .4s;
+}
+
+
+section#about-scroll,
+section#services-scroll,
+section#works-scroll,
+section#contact-scroll {
+    scroll-margin-top: 9rem;
+}
+
+
+/* ----------------------------------- NAVIGATION Stylings ----------------------------------- */
+.navbar-brand {
+    padding: 0;
+}
+.navbar {
+    background: transparent;
+    border: 0 none;
+
+    transition: all .5s ease-out;
+    -webkit-transition: all .5s ease-out;
+    -moz-transition: all .5s ease-out;
+    -ms-transition: all .5s ease-out;
+    -o-transition: all .5s ease-out;
+}
+
+.navbar .container {
+    margin-top: 7rem;
+}
+.navbar-default .navbar-nav li > a {
+    color: #9b9b9b;
+    background-color: transparent;
+    text-transform: uppercase;
+}
+.navbar-default .navbar-nav li > a:hover,
+.navbar-default .navbar-nav li > a:focus,
+.navbar-default .navbar-nav li > a:active,
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .active > a:active {
+    color: #ffffff;
+    background-color: transparent;
+    outline: 0;
+}
+
+.navbar.inbody {
+    background: rgba(0, 0, 0, .85);
+}
+.navbar.inbody .container {
+    margin: 2rem auto;
+}
+
+
+/* ----------------------------------- SECTION-HERO Stylings ----------------------------------- */
+.section-hero {
+    padding: 15rem 10rem 10rem 10rem;
+    margin-bottom: 10rem;
+
+    height: 100vh;
+    background-image: url(../images/hero-bg.jpg.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    position: relative;
+}
+
+
+/* ----------------------------------- SECTION-ABOUT Stylings ----------------------------------- */
+.section-about {
+    margin-bottom: 10rem;
+}
+.section-about .about-items > div {
+    margin-bottom: 3rem;
+    padding-right: 5rem;
+}
+.section-about .about-items .icon-heading {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.section-about .about-items .icon-heading img {
+    margin-right: 2rem;
+}
+
+
+
+/* ----------------------------------- SECTION-SERVICES Stylings ----------------------------------- */
+.section-services {
+    background-image: url(../images/services-bg.jpg.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    padding: 10rem;
+    margin-bottom: 10rem;
+}
+.section-services .service-items > div {
+    margin-bottom: 3rem;
+    padding-right: 5rem;
+}
+.section-services .service-items .number {
+    font-family: "Libre Baskerville", serif;
+    font-size: 3.6rem;
+    font-weight: 700;
+    color: #F26522;
+}
+
+
+
+
+/* ----------------------------------- SECTION-WORKS Stylings ----------------------------------- */
+.section-works,
+.section-works .works-gallery {
+    margin-bottom: 10rem;
+}
+.section-works .works-gallery,
+.section-works .works-gallery .w-g-item {
+    padding: 0;
+}
+.section-works .works-gallery .w-g-item {
+    max-width: 25%;
+    position: relative;
+
+    transition: all 5s;
+}
+.section-works .works-gallery .w-g-item.dark-overlay:before {
+    background-color: transparent;
+}
+.section-works .works-gallery .w-g-item.dark-overlay:hover:before {
+    background-color: rgba(0, 0, 0, .65);
+}
+
+.section-works .works-gallery .w-g-item img {
+    max-width: 100%;
+}
+
+.section-works .works-gallery .w-g-item .w-g-item__text,
+.section-works .works-gallery .w-g-item .w-g-item__proj-link {
+    position: absolute;
+    left: 5rem;
+    z-index: 2;
+
+    display: none;
+    
+}
+.section-works .works-gallery .w-g-item:hover .w-g-item__text,
+.section-works .works-gallery .w-g-item:hover .w-g-item__proj-link {
+    display: block;
+}
+.section-works .works-gallery .w-g-item .w-g-item__text {
+    top: 2rem;
+}
+.section-works .works-gallery .w-g-item .w-g-item__proj-link {
+    bottom: 2rem;
+
+    font-size: 1rem;
+    padding: 2rem 3rem;
+}
+
+.section-works .testimonials h2 {
+    font-size: 3.6rem;
+    font-weight: 600;
+    margin-bottom: 5rem;
+}
+.section-works .testimonial-item,
+.section-works .testimonial-author {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.section-works .testimonial-item {
+    margin-bottom: 3rem;
+}
+.section-works .testimonial-item img {
+    vertical-align: top;
+}
+.section-works .testimonial-item p {
+    max-width: 85%;
+}
+.section-works .testimonial-author {
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 7rem;
+}
+.section-works .testimonial-author img {
+    width: 7.2rem;
+    height: 7.2rem;
+    border-radius: 50%;
+
+    margin-right: 3rem;
+}
+.section-works .testimonial-author .author-info p {
+    line-height: 1;
+}
+
+
+
+/* ----------------------------------- SECTION-CLIENTS Stylings ----------------------------------- */
+.section-clients {
+    padding: 10rem 0 0;
+}
+.section-clients .brand-logos {
+    margin-bottom: 15rem;
+}
+.section-clients .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+
+    border: 1px solid #2f3937;
+}
+.section-clients .logo:nth-child(4n+1) {
+    border-left: 0 none;
+}
+.section-clients .logo:nth-child(-n+4) {
+    border-top: 0 none;
+}
+.section-clients .logo:nth-child(n+5) {
+    border-bottom: 0 none;
+}
+.section-clients .logo:nth-child(4n+4) {
+    border-right: 0 none;
+}
+
+
+.section-clients a {
+    display: block;
+}
+.section-clients a:hover img {
+    transform: scale(1.5);
+}
+.section-clients img {
+    max-width: 130px;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.section-clients .stats {
+    background-image: url(../images/hero-bg.jpg.webp);
+    background-size: cover;
+    background-position: center center;
+    padding: 10rem 5rem;
+}
+.section-clients .stats .stat-number {
+    font-size: 9rem;
+    font-weight: 600;
+}
+.section-clients .stats .desc {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+
+
+/* ----------------------------------- SECTION-CONTACT Stylings ----------------------------------- */
+.section-contact {
+    padding: 10rem 5rem
+}
+.section-contact .contact-info h2 {
+    text-transform: uppercase;
+    color: #9b9b9b;
+    font-weight: 600;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+.section-contact .contact-info p {
+    color: #fff;
+}
+
+.section-contact .contact-info a {
+    color: #F26522;
+}
+.section-contact .contact-info a:hover,
+.section-contact .contact-info a:focus,
+.section-contact .contact-info a:active {
+    color: #9b3e13;
+}
+.section-contact .contact-info .social a {
+    display: inline-block;
+    margin: 0 1rem;
+    padding: 1rem;
+    background: #F26522;
+    width: 55px;
+    height: 45px;
+    vertical-align: middle;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+.section-contact .contact-info .social a:hover,
+.section-contact .contact-info .social a:focus,
+.section-contact .contact-info .social a:active {
+    background: #9b3e13;
+}
+.section-contact .contact-info img {
+    height: 15px;
+}
+.section-contact .contact-info a:first-of-type img {
+    height: 20px;
+}
+
+
+/* ----------------------------------- FOOTER Stylings ----------------------------------- */
+footer {
+    padding: 10rem;
+    color:#9b9b9b;
+}
+
+footer .container {
+    border-top: 1px solid #444444;
+    padding-top: 5rem;
+}
+
+
+
+/* ----------------------------------- OPTIMISATION QUERIES ----------------------------------- */
+@media screen and (max-width: 1200px){
+	
+
+}/* @media screen and (max-width: 1200px) */
+
+@media screen and (max-width: 992px){
+  
+
+}/* @media screen and (max-width: 992px) */
+
+@media screen and (max-width: 768px){
+ 
+
+}/* @media screen and (max-width: 768px) */
+
+
+@media screen and (max-width: 650px){
+	
+
+}/* @media screen and (max-width: 650px) */
